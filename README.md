@@ -1,12 +1,22 @@
-# RAG System with Qdrant vector DB and HuggingFace Embeddings
+# 🧠 RAG System with Qdrant vector DB and HuggingFace Embeddings
 
 This project implements a Retrieval-Augmented Generation (RAG) system using:
 
-- Qdrant Vector Database
-- HuggingFace Embeddings
-- SambaNova LLM
-- LangChain
+- 🔎 Qdrant Vector Database
+- 🤗 HuggingFace Embeddings
+- ⚡ SambaNova LLM
+- 🔗 LangChain
+- 🐳 Docker (for Qdrant)
 
-## Setup
+---
 
-1. Create `.env` file:
+## 🏗️ Architecture
+
+User Query  
+→ Embedding (HuggingFace)  
+→ Qdrant Vector Search  
+→ Top-K Context Retrieval  
+→ SambaNova LLM  
+→ Context-Aware Answer  
+
+---
